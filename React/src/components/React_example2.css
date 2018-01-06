@@ -1,0 +1,38 @@
+.parent {
+    color : black;
+    /* background-color: red; */
+    display : inline-block;
+    width : 200px;
+    height : 400px;
+    /* border : 1px solid black; */
+    position : fixed;
+}
+
+.child {
+    background : beige;
+    display : block;
+    width : 70px;
+    height : 50px;
+    margin : 5px;
+    float : left;
+    /* opacity: 0.25; */
+    /* filter :alpha(opacity = 25); */
+}
+
+.childtext {
+    position: absolute;
+    color : black;
+    align-content: center;
+    opacity: 1.0;
+}
+
+.button{
+    background-color: gray;
+    display : block;
+    width : 32px;
+    height: 21px;
+    padding : 10px;
+    float: left; 
+    align-content: center;
+    
+}
