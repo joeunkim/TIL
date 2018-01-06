@@ -1,0 +1,46 @@
+#count{
+    background: beige;
+    float: left;
+    width: 10%;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#up{
+    background: blue; 
+    float: left;
+    width: 20%; 
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color : beige;
+}
+
+#down{
+    background: blue; 
+    float: left;
+    width: 20%; 
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color : beige;
+}
+
+#reset{
+    background: blue; 
+    float: left;
+    width: 20%; 
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color : beige;
+}
