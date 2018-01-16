@@ -1,11 +1,12 @@
-import { INCREMENT, DECREMENT, SET_DIFF } from '../actions';
-//여러개의 reducer를 한개로 합칠 때 사용
+import { INCREMENT, DECREMENT, RESET, SET_DIFF, HANDLE_OPEN, HANDLE_CLOSE } from '../actions/index.js';
 import { combineReducers } from 'redux';
 
 const counterInitialState = {
     value: 0,
-    diff: 1
+    diff: 1,
+    open: 'false'
 };
+
 
 const counter = (state = counterInitialState, action) => {
     switch(action.type) {
@@ -17,9 +18,22 @@ const counter = (state = counterInitialState, action) => {
             return Object.assign({}, state, {
                 value: state.value - state.diff
             });
+        case RESET:
+            return Object.assign({}, state, {
+                value : 0,
+                open: false
+            });
         case SET_DIFF:
             return Object.assign({}, state, {
                 diff: action.diff
+            });
+        case HANDLE_OPEN:
+            return Object.assign({}, state, {
+                open : true
+            });
+        case HANDLE_CLOSE:
+            return Object.assign({}, state, {
+                open : false
             });
         default:
             return state;
@@ -27,16 +41,8 @@ const counter = (state = counterInitialState, action) => {
 };
 
 
-const extra = (state = { value: 'this_is_extra_reducer' }, action) => {
-    switch(action.type) {
-        default:
-            return state;
-    }
-}
-
 const counterApp = combineReducers({
-    counter,
-    extra
+    counter
 });
 
 export default counterApp;

@@ -1,6 +1,6 @@
 import React from 'react';
 import Counter from './Counter';
-import Buttons from './Buttons';
+import Buttons from './MyButton2';
 import Option from './Option';
 
 class App extends React.Component {
