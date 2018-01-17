@@ -35,6 +35,7 @@ const counter = (state = counterInitialState, action) => {
             return Object.assign({}, state, {
                 open : false
             });
+        
         default:
             return state;
     }

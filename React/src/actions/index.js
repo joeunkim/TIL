@@ -42,3 +42,9 @@ export function handleClose() {
         type: HANDLE_CLOSE
     };
 }
+
+export function callAPI() {
+    return {
+        type: CALL_API
+    };
+}
